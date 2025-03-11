@@ -9,12 +9,11 @@ const displayInput = document.querySelector("#displayInput");
         let sum = 0;
 
         minusInput.addEventListener("click",()=>{
-            sum = sum  -1;
-            displayInput.value = sum;
             if (sum === 0) {
-                return displayInput.value =  sum = 0;
+                return displayInput.value =  0;
             }else{
-                return sum == 0;
+                sum = sum  - 1;
+                displayInput.value = sum;
             }
         })
     
